@@ -1,7 +1,9 @@
 library(dplyr)
 library(stringr)
+library(ggplot2)
 drug_df <- read.csv("drugoverdose.csv")
 hiv_df <- read.csv("hivaids.csv") 
+s <- read.csv("hivaids.csv") 
 
 hiv_df <- subset(hiv_df, select = -c(Borough, PROPORTION.OF.CONCURRENT.HIV.AIDS.DIAGNOSES.AMONG.ALL.HIV.DIAGNOSES, HIV.DIAGNOSES.PER.100.000.POPULATION, AIDS.DIAGNOSES.PER.100.000.POPULATION))
 drug_df <- subset(drug_df, select = -c(INDICATOR, PANEL, PANEL_NUM, UNIT, UNIT_NUM, STUB_NAME_NUM, STUB_LABEL_NUM, YEAR_NUM, AGE, AGE_NUM, ESTIMATE, FLAG))
@@ -87,3 +89,8 @@ colnames(df)[7] <- "Total Concurrent HIV Aids"
 colnames(df)[8] <- "Total Aids"
 df <- subset(df, select = -c(RACE.ETHNICITY, STUB_NAME, STUB_LABEL))
 
+
+# df used for visualisation
+clean_df <- filter(df, df$Race != "Unknown" & df$Sex != "Unknown" & df$Neighborhood != "Unknown" & df$Neighborhood != "All" )
+clean_sex_df <- filter(df, df$Sex != "Unknown" &  df$Sex != "All"  )
+clean_race_df <- filter(df, df$Race != "Unknown")
