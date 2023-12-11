@@ -54,7 +54,6 @@ about_view <- fluidPage(
          potentially mitigate drug overdose, especially amongst those diagnosed 
          with HIV/AIDS."),
       br(),
-      br(),
       h3("Abstract"),
       p("According to an article titled: Why Overdose Matters, drug overdose is 
         the leading cause of mortality among people living with HIV. If an 
@@ -63,7 +62,6 @@ about_view <- fluidPage(
         out to collect data that could provide an explanation as to why this is. 
         Is the cause due to lack of medical attention? Or could the cause be
         hereditary or based on environmental factors?"),
-      br(),
       br(),
       h3("Research Questions"),
       h4("1. Is the cause of the issue hereditary?"),
@@ -88,7 +86,6 @@ about_view <- fluidPage(
         any effect on this issue. Considering the case count with the year will
         help us discover if the issue is affected by any other external factors."),
       br(),
-      br(),
       h3("Expected Impact"),
       p("Based on our research questions, this data could provide possible 
         predictions for stakeholders as it helps raise awareness for cases of 
@@ -98,7 +95,6 @@ about_view <- fluidPage(
         publication can potentially help identify which demographics this issue
         takes prevalence in to help those be more mindful of their health and
         help doctors better support their patients."),
-      br(),
       br(),
       h3("Limitations"),
       p("Our dataset has missing data from 2014 and 2015, limiting us from 
@@ -111,7 +107,6 @@ about_view <- fluidPage(
         inaccurate or may not be able to represent the whole picture of what
         we are calling into question."),
       br(),
-      br(),
       h3("Findings"),
       p("Through this dataset, we have found that the demographic with the most
         HIV/AIDs patients affected by drug overdosage are males of Black descent
@@ -123,13 +118,11 @@ about_view <- fluidPage(
         of Black descent have the highest case count of HIV/AIDs patients 
         affected by drug overdose."),
       br(),
-      br(),
       h3("References"),
       p("Green TC, McGowan SK, Yokell MA, Pouget ER, Rich JD. HIV infection and risk of overdose: a systematic review and meta-analysis. AIDS. 2012 Feb 20;26(4):403-17. doi: 10.1097/QAD.0b013e32834f19b6. PMID: 22112599; PMCID: PMC3329893."),
       br(),
       p("Why overdose matters for HIV - open society foundations. (n.d.). https://www.opensocietyfoundations.org/uploads/3e5fb9b4-4203-47ce-a024-8ec79ce244a9/why-overdose-matters-20100715.pdf "),
       
-      br(),
       br(),
       h3("Acknowlegements"),
       p("Thank you to our INFO201 Professor Julia Deeb-Swihart and our TAs for
@@ -162,7 +155,7 @@ sex_view <- fluidPage(
       it seemes that males are more affected by this issue than females."),
   hr(),
   sidebarPanel(
-    h1("Compare between sexes over time"),
+    h3("Compare between sexes over time!"),
     h5("*Note there is no data for 2014 and 2015."),
     hr(),
     h5("Slide the circle back and forth to view more or less information about
@@ -258,7 +251,7 @@ neighborhood_view <- fluidPage(
   hr(),
   sidebarLayout(
     sidebarPanel(
-      h1("Compare between neighborhoods and find the averages each year!"),
+      h3("Compare between neighborhoods and find the averages each year!"),
       h5("*Note there is no data for 2014 and 2015 and some neighborhoods
          do not have data past 2013."),
       hr(),
